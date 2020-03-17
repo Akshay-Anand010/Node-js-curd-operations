@@ -1,0 +1,11 @@
+
+var name="Akshay"
+var amt=4000
+var msg='Hello $(name) ka salary is $(amt)'
+console.log(msg)
+
+port no(ftp) - 21
+                sftp - 22
+                 smtp - 25
+                 http - 80
+                 imap - 243

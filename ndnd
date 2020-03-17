@@ -1,0 +1,50 @@
+db.db.insert(
+    [{
+        "name":"akshay",
+        "mobile":913394824,
+        "post":"ceo"
+    },
+     {
+        "name":"mamni",
+        "mobile":913394824,
+        "post":"ceo"
+    },
+     {
+        "name":"n ns",
+        "mobile":913394824,
+        "post":"ceo"
+    },
+     {
+        "name":"nsb",
+        "mobile":913394824,
+        "post":"ceo"
+    }]
+);
+
+
+
+
+db.db.update({"mobile":"9113394824"},
+    {
+        "name":"dinesh lal yadav nirhua",
+        "mobile":9133945445,
+        "post":"ceo"
+    }
+);
+
+
+
+db.db.update({"mobile":"913394824"},
+    {
+        $set:{"post":"cto"}
+    }
+);
+
+db.db.remove({"mobile":"913394824"},);
+
+db.db.find().pretty();
+
+db.db.findOne({"mobile":913394824});
+
+
+db.db.find({"mobile":913394824},{"post":"true"},{"_id":"false"});
